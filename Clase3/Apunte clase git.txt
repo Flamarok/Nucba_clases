@@ -1,0 +1,7 @@
+Apunte clase git
+Los pasos:
+1 me posiciono con la consola en la carpeta de mi repositorio
+2 uso el comando git add . o git add -A 
+3 uso el comando git commit -m "que lleve el mensaje del cambio"
+4 Hacemos un git status para ver en que estado del commit
+5 y por ultimo git push
