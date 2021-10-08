@@ -1,0 +1,37 @@
+body {
+    background-color: rgb(245, 243, 234);
+}
+h1 {
+    background-color: rgb(250, 235, 198) ;
+    border-radius: 100px;
+    color: rgb(224, 195, 120);
+    font-size: 50px ;
+    text-align: center;
+}
+
+h2 {
+    color:rgb(172, 169, 133);
+    text-align: center;
+}
+
+p {
+  font-size: 20px;
+  color: rgb(105, 115, 126);
+}
+
+label {
+    font-size: 17px;
+    color: peru;
+}
+
+.items {
+    font-size: 18px;
+    color: rgb(216, 173, 92);
+}
+
+.citas {
+    font-style: italic;
+    font-size: 19px;
+    color: rgb(64, 102, 64);
+    background-color: rgb(243, 190, 137);
+}
