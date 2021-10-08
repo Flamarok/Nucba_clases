@@ -25,3 +25,49 @@ h2 {
            border-radius: 5px; 
 }
 
+.doctores {
+           font-size: 15px;
+           color: blue;
+           background-color: cornflowerblue; 
+           border-radius: 5px;
+}
+
+.tomate {
+        color: white;
+        background-color: red
+}
+
+.naranja {
+          color: white;
+          background-color: orange
+}
+
+.azularcoiris {
+              color: white;
+              background-color: skyblue
+}
+
+.verdealga {
+           color: white;
+           background-color: lightseagreen
+}
+
+.gris {
+       color: white;
+       background-color: grey
+} 
+
+.azulmetalico {
+              color: white;
+              background-color: mediumblue
+}
+
+.violeta {
+         color: white;
+         background-color: violet
+}
+
+.dorado {
+        color: white;
+        background-color: goldenrod
+}
