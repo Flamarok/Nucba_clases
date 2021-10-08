@@ -1,0 +1,27 @@
+body {
+    background-color: lightgreen
+}
+
+h1 {
+    font-size: 100px;
+    color: lightsalmon;
+    background-color: lightyellow;
+    /* align-items: center; si no funciona este para centrar el texto usar el de abajo*/
+    text-align: center; 
+}
+
+h2 {
+    font-size: 40px;
+    color: lightyellow;
+    background-color: limegreen;
+    text-align: center;
+}
+
+.subtexto {
+           font-size: 30px;
+           color: black;
+           background-color: burlywood;
+           border: 5px greenyellow;
+           border-radius: 5px; 
+}
+
