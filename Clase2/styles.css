@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(251, 253, 255);
+    background-color: rgb(203, 221, 240);
     margin-right: 50px;
     margin-left: 50px;
 }
@@ -64,10 +64,10 @@ div {
 .items {
     font-size: 25px;
     line-height: 1.6;
-    color: rgb(83, 144, 223);
+    color: rgb(74, 116, 170);
     list-style-type: none;
     text-align: center;
     margin-top: -285px;
     margin-bottom: 190px;
-    margin-left: 100px;
+    margin-left: 250px;
 }
