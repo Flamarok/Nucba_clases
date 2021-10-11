@@ -1,37 +1,69 @@
 body {
-    background-color: rgb(245, 243, 234);
+    background-color: rgb(255, 254, 247);
+    margin-right: 50px;
+    margin-left: 50px;
 }
+
 h1 {
-    background-color: rgb(250, 235, 198) ;
+    background-color: rgb(222, 241, 185) ;
     border-radius: 100px;
-    color: rgb(224, 195, 120);
+    color: rgb(231, 189, 81);
     font-size: 50px ;
     text-align: center;
+    margin: 20px;
+    font-style:Normal;
+    padding: 15px;
+
 }
 
 h2 {
-    color:rgb(172, 169, 133);
+    color:rgb(60, 126, 41);
     text-align: center;
+    font-size: 30px;;
 }
 
 p {
   font-size: 20px;
   color: rgb(105, 115, 126);
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-bottom: 40px; 
+}
+
+
+
+.citas {
+        margin-right: 50px;  
+        margin-left: 50px;  
+        font-style: italic;
+        font-size: 19px;
+        color: rgb(64, 102, 64);
+        background-color: rgb(243, 190, 137);
+        border-radius: 15px;
+        padding: 10px;
+}
+
+
+
+.foto {
+    display: block;
+    margin:auto;
+    border-radius: 20px;
+    height: 385px;
+    border-color:darkgoldenrod;
+    border-style: double;
 }
 
 label {
     font-size: 17px;
     color: peru;
+    padding-bottom: 25px;
 }
 
 .items {
-    font-size: 18px;
-    color: rgb(216, 173, 92);
-}
-
-.citas {
-    font-style: italic;
     font-size: 19px;
-    color: rgb(64, 102, 64);
-    background-color: rgb(243, 190, 137);
+    color: rgb(216, 173, 92);
+    list-style-type: none;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
