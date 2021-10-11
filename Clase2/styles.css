@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(255, 254, 247);
+    background-color: rgb(251, 253, 255);
     margin-right: 50px;
     margin-left: 50px;
 }
 
 h1 {
-    background-color: rgb(222, 241, 185) ;
+    background-color: rgb(141, 177, 216) ;
     border-radius: 100px;
     color: rgb(231, 189, 81);
     font-size: 50px ;
@@ -17,16 +17,21 @@ h1 {
 }
 
 h2 {
-    color:rgb(60, 126, 41);
+    color:rgb(65, 129, 197);
     text-align: center;
     font-size: 30px;;
+    margin-top: 60px;
+    margin-bottom: 20px;   
 }
 
-p {
+div {
+    margin-bottom: 100px;
+}
+
+.conociendome-text {
   font-size: 20px;
-  color: rgb(105, 115, 126);
+  color: rgb(72, 85, 99);
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  padding-bottom: 40px; 
 }
 
 
@@ -35,35 +40,34 @@ p {
         margin-right: 50px;  
         margin-left: 50px;  
         font-style: italic;
-        font-size: 19px;
-        color: rgb(64, 102, 64);
-        background-color: rgb(243, 190, 137);
-        border-radius: 15px;
-        padding: 10px;
+        font-size: 23px;
+        color: rgb(58, 81, 105);
+        background-color: rgb(160, 191, 224);
+        border-radius: 100px;
+        margin-bottom: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
 }
 
 
-
-.foto {
-    display: block;
-    margin:auto;
+.foto {;
     border-radius: 20px;
     height: 385px;
-    border-color:darkgoldenrod;
+    border-color: rgb(160, 191, 224);
     border-style: double;
+    margin-left: 110px;
 }
 
-label {
-    font-size: 17px;
-    color: peru;
-    padding-bottom: 25px;
-}
 
 .items {
-    font-size: 19px;
-    color: rgb(216, 173, 92);
+    font-size: 25px;
+    line-height: 1.6;
+    color: rgb(83, 144, 223);
     list-style-type: none;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 50px;
+    margin-top: -285px;
+    margin-bottom: 190px;
+    margin-left: 100px;
 }
