@@ -1,0 +1,9 @@
+#ul-formas {
+    padding-left: 0px;
+    list-style-type: none ;
+}
+
+.ul-formas-anidadas {
+    padding-right: 0px;
+    list-style: none ;
+}
