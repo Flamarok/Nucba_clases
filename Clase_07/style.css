@@ -1,0 +1,21 @@
+body{
+    background-color: lightgoldenrodyellow;
+}
+
+ /* ej de mediaquerys */ 
+@media only screen and (max-width: 600px) {
+    body {
+        background-color:red;
+    }
+}
+
+/* Mobile First */
+/* Toda clase que se llama "col-" se adaptara al 100 de ancho y por ende a la pantalla del celu */
+[class*="col-"] {
+    width: 100%
+}
+
+@media only screen and (min-width: 768 px) {
+    /* para escritorio */
+
+}
