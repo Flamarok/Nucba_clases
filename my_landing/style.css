@@ -1,0 +1,57 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(74, 109, 74);
+}
+
+.navbar {
+    border-radius: 10px;
+    margin: 10px;
+    background-image: url(./assets/concepto-material-madera-textura-papel-pintado-fondo_53876-42925.jpg);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.title__home {
+    font-size: 90px;
+    color: rgb(5, 129, 92);
+    text-shadow: -2px 4px 0 #4feb88, -9px 2px 0;
+    align-self: center;
+}
+
+.nav__img img{
+    width: 200px;
+    height: 200px;
+}
+
+.menu{
+    width: 250px;
+    display: flex;    
+}
+
+.menu ul {
+    display: flex;
+    align-self: center;
+}
+
+.menu li {
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+    margin: 10px;
+    background-color: #3e6e50;
+    border-style: ;
+    border-color: rgb(33, 65, 33);
+    border-radius: 20px;
+    text-decoration: none;
+    align-self: center;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color:whitesmoke;
+}
