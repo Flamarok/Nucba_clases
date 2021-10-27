@@ -14,7 +14,7 @@
     width: 4em;
     margin: 1.5em auto;
     transform-style: preserve-3d;
-    transform: rotateX(-45deg) rotateY(30deg);
+    transform: rotateX(-22deg) rotateY(42deg);
     animation-name: giroCubo;
     animation-duration: 5s;
     animation-iteration-count: infinite;
@@ -58,7 +58,8 @@
     transform: rotateY(-180deg) translateZ(2em);
 }
 
+
 @keyframes giroCubo {
-    0% {transform: rotateX(0deg) rotateY(360deg);}
-    100% {transform: rotateY(0deg) rotateZ(0deg);} 
+    0% {transform: rotateX(-22deg) rotateY(42deg);}
+    100% {transform: rotateX(-22deg) rotateY(318deg);}
 } 
