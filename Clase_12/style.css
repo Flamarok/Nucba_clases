@@ -19,7 +19,7 @@
 /* Default */
 *,
 *::after,
-*::before, {
+*::before {
     margin: 0;
     padding: 0;
     box-sizing: border-bodex;
@@ -89,7 +89,8 @@ section ul h2 {
 section ul p {
     font-family: "Lecend Deca", sans-serif;
     color:var(--neu--more-trans-white);
-    text-transform: uppercase;
+    text-transform: uppercase; 
+    /* text-transform especifica el cambio entre mayúsculas y minúsculas del texto de un elemento. Puede ser usada para que un texto aparezca completamente en mayúsculas, en minúsculas, o con la primera letra de cada palabra en mayúscula.*/
     font-size: 0.75rem;
 }
 

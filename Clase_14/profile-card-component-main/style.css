@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+body {
+    height: 100vh;
+    background: url(./images/bg-pattern-bottom.svg) 150px  350px, url(./images/bg-pattern-top.svg)  -750px -550px;
+    background-color: var(--dark-cyan);
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    font-family: 'Kumbh Sans',sans-serif;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 85%;
+    margin-bottom: 30px;
+}
+
+.description {
+    background-color: rgb(247, 247, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.img_fondo {
+    border-radius: 20px 20px 0px 0px;
+}
+
+.image_user {
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 6px solid rgb(247, 247, 247);
+}
+
+.description_victor {
+    text-align: center;
+    
+}
+
+h2 {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+span{
+    margin-left: 5px;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+p {
+    font-size: 12px;
+    color: var(--dark-grayish-blue);
+}
+
+.description_victor p {
+    margin: 10px 0 25px 0;
+}
+
+hr {
+    width: 100%;
+
+}
+
+.description_stats {
+    border-top: 1px solid #e4e2e2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description_stats p{
+    letter-spacing: 1px;
+}
+
+.description_stats ul {
+    list-style : none;
+}
+
+.description_stats li {
+    display: inline-block;
+    text-align: center;
+    margin: 0px 15px 18px 15px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
