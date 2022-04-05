@@ -262,7 +262,7 @@ if (bebida.toLowerCase() == "cerveza" && edad < 18) {
 */
 
 // Ejercicio 13
-
+/*
 let mes = prompt("Ingrese un mes del 1 al 12");
 if (mes == 1) {
     alert("Enero");
@@ -288,4 +288,330 @@ if (mes == 1) {
     alert("Noviembre");
 }else if (mes == 12) {
     alert("Diciembre");
+}
+/*
+
+/*1. Bonus
+let claveIngresada = prompt("Ingrese su clave de seguridad");
+if (clave == claveIngresada) {
+    let monto = prompt("Su balance es de $" + balance + ". Ingrese el monto a retirar");
+    if (monto < balance) {
+        balance = balance - monto;
+        alert("Su balance es de $" + balance);
+    } else {
+        alert("No puede retirar más dinero del que tiene disponible")
+    }
+} else {
+    alert("Ingreso una clave incorrecta")
+}
+*/
+
+
+/*2. Solicitar al usuario su día y mes de nacimiento e indicar cual es su signo zodiacal.
+let dia = prompt("Ingrese su día de nacimiento");
+let mes = prompt("Ingrese su mes de nacimiento (en número)");
+if ((dia >= 21 && mes == 3) || (dia <= 20 && mes==4 )) {
+    alert('Aries');
+} else if((dia >= 21 && mes == 4)||(dia <= 21 && mes == 5)){
+    alert('Tauro');
+} else if((dia >= 22 && mes == 5) || (dia <= 21 && mes == 6)) {
+    alert('Géminis');
+} else if((dia >= 21 && mes == 6) || (dia <= 23 && mes == 7)) {
+    alert('Cáncer');
+} else if((dia >= 24 && mes == 7) || (dia <= 23 && mes == 8)) {
+    alert('Leo');
+} else if((dia >= 24 && mes == 8) || (dia <= 23 && mes == 9)) {
+    alert('Virgo');
+} else if ((dia >= 24 && mes == 9) || (dia <= 23 && mes == 10)) {
+    alert('Libra');
+} else if((dia >= 24 && mes == 10) || (dia <= 22 && mes == 11)) {
+    alert('Escorpio');
+} else if((dia >= 23 && mes == 11) || (dia <= 21 && mes == 12)) {
+    alert('Sagitario');
+} else if((dia >= 22 && mes == 12) || (dia <= 20 && mes == 1)) {
+    alert('Capricornio');
+} else if((dia >= 21 && mes == 1)||(dia <=19 && mes == 2)) {
+    alert('Acuario');
+} else if((dia >= 20 && mes == 2) || (dia <= 20 && mes == 3)) {
+    alert('Piscis');
+} else {
+    alert("No es una fecha válida");
+}
+*/       
+
+
+//3. Solicitar al usuario que ingrese la hora y su nombre. Si son entre las 12 inclusive y 19 saludar con buenas tardes, entre 19 inclusive y 5 buenas noches, y entre 5 inclusive y 12 buenos días. 
+/*
+let nombre = prompt("Ingrese su nombre");
+let hora = prompt("Ingrese la hora (Ej.: 19.20)");
+
+if (hora >= 12 && hora < 19) {
+    alert("Buenas tardes " + nombre);
+} else if (hora >= 19 || hora < 5) {
+    alert("Buenas noches " + nombre);
+} else {
+    alert("Buenos días " + nombre);
+}
+
+*/
+
+ //  Bucles
+
+/*Ejercicio 1
+    let clave = 4523;
+    let balance = 10000;
+    let eleccion = 0
+    let claveIngresada = prompt ("Ingrese su clave de seguridad");
+
+    do {
+        if (clave == claveIngresada) {
+            let monto = prompt("Su balance es de $" + balance + ". Ingrese el monto a retirar");
+        if (monto < balance) {
+            balance = balance - monto;
+            alert("Su balance es de $" + balance);
+            eleccion = prompt("ingrese 1 si quiere seguir operando o ingrese 0 si quiere salir.");
+        } else {
+            alert("No puede retirar más dinero del que tiene disponible");
+            eleccion = prompt("Ingrese 1 si quiere seguir operando o ingrese 0 si quiere salir.");
+        } 
+        } else {
+            alert("Ingreso una clave incorrecta")
+        }
+} while (eleccion === 1);
+*/
+
+/* Ejercicio 2
+
+for (let index = 0; index < 10; index++) {    
+    document.write(index + 1 + " ");
+}
+
+/*
+
+/* Ejercicio 3 
+
+let auxiliar = 0;
+
+for (let index = 0; index < 5; index++) {
+    let numero1 = prompt(`Ingrese el número n° ${index + 1}`);
+    auxiliar = parseFlow(numero1) + auxiliar;
+    
+}
+
+alert(`La suma de tus números es de `+ auxiliar);
+
+*/
+
+/* Ejercicio 4 
+
+let auxiliar = 0 
+let variableNumero = prompt("¿Cuantos números desea ingresar?")
+
+for (let index = 0; index < variableNumero; index++) {
+    let numero1 = prompt(`Ingrese el número n° ${index + 1}`);
+    auxiliar = parseFlow(numero1) + auxiliar;
+    
+}
+
+alert(`La suma de tus números es de `+ auxiliar);
+*/
+
+/* Ejercicio 5 
+
+let auxiliar = 0; 
+let index = 1;
+
+do {
+    var numero1 = prompt("Ingrese el número n° " + index + ". Si quiere dejar de sumar ingrese 0");
+    auxiliar = parseInt(numero1) + auxiliar;
+    index++ 
+} while (numero1 > 0);
+alert("La suma de tus números es de " + auxiliar);
+*/
+
+/*Ejercicio 6 
+
+let auxiliar = 0; 
+let index = 1;
+
+
+do {
+    var numero1 = prompt("Ingrese el número n° " + index + ". Si quiere dejar de sumar ingrese 0");
+    numero1.toLowerCase();
+    if (numero1 == "t") {
+        auxiliar = auxiliar / (index - 1);
+    } else {
+        auxiliar = parseInt(numero1) + auxiliar;
+        index++
+    }
+    
+} while (numero1 != "t");
+
+alert("El promedio de tus números es de " + auxiliar);
+*/
+
+/*Ejercicio 6 
+
+let numeroIntroducido = prompt("Introduzca un número");
+numeroIntroducido = parseInt(numeroIntroducido);
+
+for (let index = 0; index < numeroIntroducido; index++) {
+    document.write((index + " "));
+}
+
+*/
+
+/* Ejercicio 7 
+
+let numeroIntroducido = prompt("Introduzca un número");
+let numeroIntroducidoDos = prompt("Introduzca el segundo número");
+numeroIntroducido = parseInt(numeroIntroducido);
+numeroIntroducidoDos = parseInt(numeroIntroducidoDos);
+
+for (let index = numeroIntroducido; index < numeroIntroducidoDos; index++) {
+    document.write((index + " "));
+}
+
+*/ 
+
+/* Ejercicio 8 
+
+let numeroDeseado = prompt("Ingrese la cantidad de números que desea ingresar.");
+numeroDeseado = parseInt(numeroDeseado);
+let auxiliar = 0;
+
+for (let index = 0; index < numero; index++) {
+    var numero = prompt("Ingrese el número " + (index + 1));
+    numero = parseInt(numero);
+
+    if (numero > auxiliar) {
+        auxiliar = numero;
+    }
+}
+
+alert("El número mayor es " + auxiliar);
+*/
+
+/* Ejercicio 9 
+
+let numeroDeseado = prompt("Ingrese la cantidad de números que desea ingresar.");
+numeroDeseado = parseInt(numeroDeseado);
+var auxiliar = Number.POSITIVE_INFINITY;
+
+for (let index = 0; index < numero; index++) {
+    var numero = prompt("Ingrese el número " + (index + 1));
+    numero = parseInt(numero);
+    
+
+    if (numero < auxiliar) {
+        auxiliar = numero;
+    }
+}
+
+alert("El número menor es " + auxiliar);
+
+*/
+
+/* Ejercicio 10  
+
+let contador = prompt("Ingrese un número.");
+
+for (let index = 0; index < contador; index++) {
+    document.write("*");
+}
+
+/*
+
+/* Ejercicio 11 
+let base = prompt("Ingrese la base.");
+let exponente = prompt("ingrese el exponente.");
+
+base = parseInt(base);
+exponente = parseInt(exponente);
+let auxiliar =0;
+
+for (let index = 0; index < exponente--; index++) {
+
+    base = base * auxiliar;
+
+}
+
+*/
+
+/* Ejercicio 12 
+
+let numero = prompt ("Ingrese un número");
+numero = parseInt(numero);
+let auxiliar = 0; 
+for (let index = numero; index > 1 ; index--) {
+    numero= auxiliar * (index-1);
+}
+
+alert("El resultado es " + número);
+
+*/
+
+/* Ejercicio 13 
+
+let numero = prompt ("Ingrese un número");
+numero = parseFloat(numero);
+
+for (let index = numero; index > 1; index--) {
+   let resto = numero % index;
+   if(resto === 0) {
+       console.log(index);
+   }
+}
+
+*/
+
+/* Ejercicio 14 
+
+let numero = prompt("Ingrese un número.");
+numero = parseInt(numero);
+
+let cadena = prompt("Ingrese una frase.");
+
+for (let index = 0; index < numero ; index++) {
+    console.log(cadena.charAt(index))
+}
+
+*/
+
+/* Ejercicio 15 
+
+
+*/ 
+
+/* Ejercicio 15 x2 
+var aux = 1;
+        do{
+            var items = prompt("ingrese item de la lista. Si desea finalizar la lista escriba un punto.");
+            
+            if(items != "."){
+                if(aux === 1){
+                    document.write(items);
+                }else {
+                    document.write("," + items);
+                }
+            }
+            aux++;
+        }while(items !== ".")
+        
+        console.log(aux);
+*/
+
+/* Ejercicio 16  revisar */
+
+numero = parseFloat(numero);
+let resultadoUno = numero % numero;
+resultadoUno = parseFloat(resultadoUno);
+
+let resultadoDos = numero % 1;
+resultadoDos = parseFloat(resultadoDos);
+
+
+
+while (resultadoUno != 0 && resultadoDos != 0) {
+    let numero = prompt("Ingrese un número.");
 }
