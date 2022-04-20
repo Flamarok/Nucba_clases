@@ -67,3 +67,15 @@ class Auto {
 
 var miAuto = new Auto('Fiat', "Idea", 2022, 2015);  // anios preferentemente en numero por caso de operacion matematica.
 */
+
+/*
+// otra manera de crear objetos
+const pizzas = [
+  {id: 0, name: "muzzarella", ingredientes: "muzarella, sal, tomate", precio: 250 },
+  {id: 1, name: "pepperoni", ingredientes: "pepperoni, queso, tomate", precio: 300 },
+  {id: 2, name: "fugazzeta", ingredientes: "cebolla, queso, tomate", precio: 280 },
+  {id: 3, name: "hawaiana", ingredientes: "piña, queso, tomate", precio: 290 },
+  {id: 4, name: "mexicana", ingredientes: "carne, sal, queso", precio: 250 },
+  {id: 5, name: "anchoa", ingredientes: "anchoas, muzzarella, tomate", precio: 250 }
+];
+*/
