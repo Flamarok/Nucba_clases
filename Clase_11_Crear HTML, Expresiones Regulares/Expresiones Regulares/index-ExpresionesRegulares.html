@@ -11,7 +11,7 @@
     <main>
       <form action="" class="formulario" id="formulario">
         <!-- grupo del usuario -->
-        <div>
+        <div id="grupo_usuario">
           <label for="">Usuario</label>
           <div>
             <input
@@ -27,7 +27,7 @@
           </p>
         </div>
           <label for="">Nombre</label>
-          <div>
+          <div id="grupo_nombre">
             <input
               type="text"
               name="nombre"
@@ -36,8 +36,7 @@
             />
           </div>
           <p class="formulario__input-error">
-            El usuario tiene que ser de 4 a 16 digitos y solo puede contener
-            letras y digitos, guion bajo
+            El nombre debe tener letras y espacios, puede tener acentos.
           </p>
         </div>
           <div><button type="submit">Enviar</button></div>
