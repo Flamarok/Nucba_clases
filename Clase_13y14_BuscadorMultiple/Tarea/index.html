@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Formularios y Validación</title>
+</head>
+<body>
+    <main>
+      <form action="" class="formulario" id="formulario">
+        <!-- grupo del mail -->
+        <div id="grupo_mail">
+          <label for="">Mail</label>
+          <div>
+            <input
+              type="text"
+              name="mail"
+              id="mail"
+              placeholder="Ariel123@gmail.com"
+            />
+          </div>
+          <p class="formulario__input-error">
+            El mail debe ser de un formato valido.
+          </p>
+        </div>
+          <label for="">Contraseña</label>
+          <div id="grupo_contraseña">
+            <input
+              type="password"
+              name="contraseña"
+              id="contraseña"
+              placeholder="*********"
+            />
+          </div>
+          <p class="formulario__input-error">
+            La contraseña debe tener un mínimo de 5 y un máximo de 12 caracteres.
+          </p>
+        </div>
+          <div><button type="submit">Enviar</button></div>
+        </div>
+      </form>
+    </main>
+    <script src="./app.js"></script>
+</body>
+</html>

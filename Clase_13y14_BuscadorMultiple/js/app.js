@@ -20,7 +20,8 @@ const datosDeBusqueda = {
     marca: '',
     modelo: '',
     year: '',
-    precio: '',
+    minimo: 0,
+    maximo: 0,
     puertas: '',
     color: '',
     transmision: ''
@@ -111,3 +112,4 @@ year.addEventListener('change',(e) => { // evento que hace referencia al cambio 
     datosDeBusqueda.year = e.target.value;
     filtrarAuto()                        // cuando uso la e puedo utilizar el e.target.value y darme el valor del queryelector elegido.
 });
+
