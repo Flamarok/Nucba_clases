@@ -24,4 +24,17 @@ const persona3 = new Persona("Carlos", 23)
 // tipo string, hasta que instanciamos la creacion de una persona, en este ultimo lo toma como objeto
 
 
+// Patron Singletton
+let instancia = null
 
+class Persona {
+    constructor(nombre, edad) {
+        if (!instancia /* al estar negado instancia not null */) {
+            this.nombre = nombre,
+            this.edad = edad,
+            instancia = this
+        } else {
+            return instancia
+        }
+    }
+}
