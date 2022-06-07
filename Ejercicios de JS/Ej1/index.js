@@ -1,5 +1,5 @@
 
-var ingredientes = [
+const ingredientes = [
   "masa",
   "tomate",
   "jamon",
