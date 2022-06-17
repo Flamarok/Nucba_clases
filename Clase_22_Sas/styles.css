@@ -1,0 +1,58 @@
+body {
+  background-color: gray;
+}
+
+/* h1 {
+    color: $color-titulo;
+} */
+p {
+  font-size: 25px;
+  color: red;
+}
+
+.caja {
+  border: 2px solid black;
+  background-color: white;
+  margin: 0 auto;
+  padding: 10px;
+}
+.caja p {
+  font-size: 32px;
+  color: blue;
+}
+
+.caja {
+  border: 5px solid blue;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px red;
+  width: 50%;
+}
+
+.alerta-sucess, .alerta-warning, .alerta {
+  text-align: center;
+  border: 1px solid gray;
+  background-color: white;
+  color: rgb(243, 8, 8);
+  padding: 10px;
+  width: 50%;
+  margin: 20px auto;
+}
+
+.alerta-warning {
+  border: 1px solid yellow;
+  color: rgb(7, 246, 234);
+}
+
+.alerta-sucess {
+  border: 1px solid rgb(22, 253, 53);
+  color: rgb(31, 21, 218);
+}
+
+h1 {
+  color: rgb(138, 138, 10);
+  font-size: 32px;
+}
+
+/* @use '_base.scss' */
+
+/*# sourceMappingURL=styles.css.map */

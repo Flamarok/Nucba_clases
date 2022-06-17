@@ -1,0 +1,75 @@
+// Variables
+
+$color-titulo:red;
+
+$fuente-normal: sans-serif, Arial, Helvetica;
+
+$tamanio:25px;
+
+$fondo: gray;
+
+body {
+    background-color: $fondo;
+};
+
+/* h1 {
+    color: $color-titulo;
+} */
+
+p {
+    font-size: $tamanio;
+    color: $color-titulo;
+}
+
+// Anidaciones
+.caja {
+    border: 2px solid black;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    
+
+    p {
+        font-size: 32px;
+        color: blue;
+    }
+}
+
+// Mixins / Funciones
+
+@mixin crearBordes($border-color, $border-radius, $tamanio-shadow, $disminuir) {
+    border: 5px solid $border-color;
+    border-radius: $border-radius;
+    box-shadow: 0px 0px $tamanio-shadow red;
+    width: 100% - $disminuir;
+}
+
+.caja {
+    @include crearBordes(blue, 25px, 10px, 50%);
+}
+
+%alerta-normal {
+    text-align: center;
+    border:1px solid gray;
+    background-color: white;
+    color: rgb(243, 8, 8);
+    padding: 10px; 
+    width: 50%;
+    margin: 20px auto; 
+}
+
+.alerta{
+    @extend %alerta-normal;
+}
+
+.alerta-warning {
+    @extend %alerta-normal;
+    border: 1px solid yellow ;
+    color: rgb(7, 246, 234);
+}
+
+.alerta-sucess {
+    @extend %alerta-normal;
+    border: 1px solid rgb(22, 253, 53);
+    color:rgb(31, 21, 218);
+}
