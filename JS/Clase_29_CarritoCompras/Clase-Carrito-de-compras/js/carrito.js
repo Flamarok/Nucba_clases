@@ -12,6 +12,7 @@ export function carritoHTML(elemento) {
         <td>${el.titulo} </td>
         <td>${el.precio} </td>
         <td>${el.cantidad} </td>
+        <td class='borrar-curso' href='#' data-id='${el.id}'>Eliminar</td>
         `
         contenedorCarrito.appendChild(row)
     })

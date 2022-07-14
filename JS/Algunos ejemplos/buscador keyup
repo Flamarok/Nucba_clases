@@ -1,0 +1,133 @@
+
+
+document.addEventListener('DOMContentLoaded', ()=>{
+    guardar_localStorage(data,'pizzas');
+  
+    mostrarTodas();
+  
+    const input = document.querySelector("#nombre");
+    input.addEventListener('keyup', (e)=>{buscador(e)});
+  });
+
+
+  // Local storage 
+  function guardar_localStorage(objeto,llave){
+    //convierte OBJ -> string y guardo
+    localStorage.setItem(llave,JSON.stringify(objeto));
+  }
+  
+  function obtener_localStorage(llave){
+    if(localStorage.getItem(llave)){
+      let obj = JSON.parse(localStorage.getItem(llave));
+      return obj;
+    }else{
+      console.log("no hay datos cargados en localstorage");
+    }
+  }
+  function limpiar_localStorage(clave){
+    //REMOVER DE LOCAL STORAGE
+    localStorage.removeItem(clave);
+    return console.log("se removio"+clave);
+  }
+
+  // Buscador
+  function buscador(e){
+    let lista = document.querySelectorAll(".card-style");
+    lista.forEach( pizza=>{
+      pizza.textContent.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
+      ?pizza.classList.remove("ocultar")
+      :pizza.classList.add("ocultar");
+    });
+    mensajeError();
+  }
+
+// Crea card
+let fragment = document.createDocumentFragment();
+  const card = document.createElement('div');
+  const h2 = document.createElement('h2');
+  const img = document.createElement('img');
+  const h3 = document.createElement('h3');
+  const ul = document.createElement('ul');
+
+  card.classList.add('card');
+  card.classList.add('card-style');
+  h2.classList.add('card__title');
+  h2.textContent= `${nombre} - ${precio}$`;
+  img.classList.add('card__img');
+  img.src=imagen;
+  h3.classList.add('card__subtitle');
+  h3.textContent="Ingredientes"
+  ul.classList.add('card__list');
+
+  ingredientes.map((ingrediente)=>{
+    let li = document.createElement('li');
+    li.classList.add('card__list__item');
+    li.textContent=ingrediente;
+    ul.appendChild(li);
+  });
+
+  card.appendChild(h2);
+  card.appendChild(img);
+  card.appendChild(h3);
+  card.appendChild(ul);
+
+  fragment.appendChild(card);
+  return fragment;
+
+  //Mensaje error
+  function mensajeError(){
+    const blurBG = document.querySelectorAll(".ocultar");
+    const respuesta = document.querySelector("#mensaje");
+    const contenedor = document.querySelector("body > main > div")
+    let sum = 0;
+    console.log(blurBG);
+  
+    blurBG.forEach( elemento => {
+      elemento.matches('.ocultar') ? sum++: sum;
+    });
+    if (sum === 7){
+      console.log("No Encontrada");
+      respuesta.textContent="Pizza no encontrada";
+      respuesta.style.color="red"
+      contenedor.style.height ="100vh"
+    }else{
+      respuesta.textContent="";
+      contenedor.style.height ="auto"
+  
+    }
+  }
+
+// Mostrar todas
+function mostrarTodas(){
+    let containerPizzas = document.querySelector("#container-pizzas");
+    const arrayPizzas = obtener_localStorage('pizzas');
+    let fragment = document.createDocumentFragment();
+  
+    arrayPizzas.map((pizza) =>{
+      let card = crearCard(pizza.nombre, pizza.precio, pizza.img, pizza.ingredientes);
+      fragment.appendChild(card)
+    })
+    containerPizzas.appendChild(fragment);
+  }
+
+
+
+const blurBG = document.querySelectorAll(".ocultar");
+  const respuesta = document.querySelector("#mensaje");
+  const contenedor = document.querySelector("body > main > div")
+  let sum = 0;
+  console.log(blurBG);
+
+  blurBG.forEach( elemento => {
+    elemento.matches('.ocultar') ? sum++: sum;
+  });
+  if (sum === 7){
+    console.log("No Encontrada");
+    respuesta.textContent="Pizza no encontrada";
+    respuesta.style.color="red"
+    contenedor.style.height ="100vh"
+  }else{
+    respuesta.textContent="";
+    contenedor.style.height ="auto"
+
+  }
