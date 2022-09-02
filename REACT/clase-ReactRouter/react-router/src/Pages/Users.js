@@ -12,8 +12,8 @@ const Users = () => {
             </nav>
             <Routes>
                 <Route path='me' element={<UserProfile />} /> // retornara mi perfil
-                <Route path=':user' element={<User />} /> // retornara el perfil de user (ver componente user)
-                <Route path='' element />
+                <Route path=':user' element={<User />} /> // retornara el perfil de user (ver componente user) ruta dinamica
+                <Route path='' element /> // no tiene nada
             </Routes>
         </div>
     )

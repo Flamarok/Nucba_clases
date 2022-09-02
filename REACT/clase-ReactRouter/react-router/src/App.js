@@ -18,7 +18,7 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='about' element={<About />} />
         <Route path='*' element={<NotFound />} />
-        <Route path='/users/*' element={<Users />} />  
+        <Route path='/users/*' element={<Users />} />  // despues del astericos vendra algun agregado o anexo a esa ruta
       </Routes>  
       {/*       <nav>
         <Link to="/">Inicio</Link>
